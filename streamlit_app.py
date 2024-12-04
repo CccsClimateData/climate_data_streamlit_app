@@ -373,19 +373,19 @@ fig.update_layout(
 
 
 # Display the map with custom width and height
-st.plotly_chart(fig, use_container_width=True)
+#st.plotly_chart(fig, use_container_width=True)
 
 # Create a download button
-st.download_button(
-    label="Download Map as PNG",
-    data=save_figure_as_image(fig),
-    file_name=f"{og_parameter}_map.png",
-    mime="image/png"
-)
+#st.download_button(
+#    label="Download Map as PNG",
+#    data=save_figure_as_image(fig),
+#    file_name=f"{og_parameter}_map.png",
+#    mime="image/png"
+#)
 
 
-st.text('')
-st.text('')
+#st.text('')
+#st.text('')
 
 # Create a histogram of the values across all districts
 fig_hist = px.histogram(renamed_data, x=column_name, title='')
@@ -424,12 +424,12 @@ fig_hist.update_layout(
 )
 
 # Display the interactive histogram below the first map
-st.plotly_chart(fig_hist, use_container_width=True)
-
-st.text('')
-st.text('')
-st.text('')
-st.text('')
+#st.plotly_chart(fig_hist, use_container_width=True)
+#
+#st.text('')
+#st.text('')
+#st.text('')
+#st.text('')
 
 
 
@@ -533,14 +533,14 @@ if form_submitted:
     )
 
 
-st.text('')
-st.text('')
-st.text('')
-st.text('')
+#st.text('')
+#st.text('')
+#st.text('')
+#st.text('')
 
 
 # Display data table
-st.subheader("District-level Data (Sorted in Descending Order)")
+#st.subheader("District-level Data (Sorted in Descending Order)")
 
 # Create a copy of the data with only the columns we need
 district_display_data = renamed_data[[district_col, state_col, district_l_col, column_name]].copy()
@@ -571,9 +571,9 @@ st.download_button(
   key='download-csv'
 )
 
-st.text('')
-st.text('')
-st.text('')
+#st.text('')
+#st.text('')
+#st.text('')
 
 
 # State-level Analysis
@@ -858,7 +858,7 @@ st.text('')
 
 
 
-st.header("Extreme Event Analysis")
+#st.header("Extreme Event Analysis")
 
 # Get the list of columns starting from "Annual Wet Bulb Temperature" to the last column
 start_col = 'Average of Annual Wet Bulb Temperature'
@@ -950,12 +950,12 @@ fig_extreme.update_layout(
 )
 
 # Display the map
-st.plotly_chart(fig_extreme, use_container_width=True)
+#st.plotly_chart(fig_extreme, use_container_width=True)
 
 # Create a download button
-st.download_button(
-    label="Download Map as PNG",
-    data=save_figure_as_image(fig_extreme),
-    file_name=f"{og_parameter}_extremes_map.png",
-    mime="image/png"
-)
+#st.download_button(
+#    label="Download Map as PNG",
+#    data=save_figure_as_image(fig_extreme),
+#    file_name=f"{og_parameter}_extremes_map.png",
+#    mime="image/png"
+#)
