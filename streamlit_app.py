@@ -856,6 +856,15 @@ st.text('')
 st.text('')
 
 
+st.write(f'''
+    <a target="_self" href="https://climateprojections.azimpremjiuniversity.edu.in/">
+        <button>
+            National level scenario
+        </button>
+    </a>
+    ''',
+    unsafe_allow_html=True
+)
 #
 #
 ##st.header("Extreme Event Analysis")
