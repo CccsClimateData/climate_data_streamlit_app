@@ -857,7 +857,7 @@ st.text('')
 
 
 st.write(f'''
-    <a target="_self" href="https://climateprojections.azimpremjiuniversity.edu.in/">
+    <a target="_blank" href="https://climateprojections.azimpremjiuniversity.edu.in/">
         <button>
             National level scenario
         </button>
