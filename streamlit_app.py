@@ -218,10 +218,8 @@ parameter = st.sidebar.selectbox(
 og_parameter = new_og_names_dict[parameter] 
 
 
-stat_type = st.sidebar.radio(
-"Select statistic type",
-options=['mean', 'max', 'min']
-)
+#stat_type = st.sidebar.radio("Select statistic type",options=['mean', 'max', 'min'])
+stat_type= 'mean'
 
 
 stat_type_dict = {'mean':'Average of', 'max': 'Maximum of', 'min': 'Minimum of'}
